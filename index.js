@@ -60,9 +60,9 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
 const vcard = 'BEGIN:VCARD\n'//JANGAN DI GANTI ANJING
             + 'VERSION:3.0\n'//JANGAN DI GANTI ANJING,NTAR EROR
-            + 'FN:Owner Emelia\n' // GANTI NAMA LU BODOH
-            + 'ORG: REMBOT;\n'//GANTI NAMA BOT LUH BANGSAT
-            + 'TEL;type=CELL;type=VOICE;waid=6281534162316:+62 815-3416-2316\n' // GANTI NOMOR LU BEGONIAN
+            + 'FN:Owner Zhyy\n' // GANTI NAMA LU BODOH
+            + 'ORG: ZHYYBOT;\n'//GANTI NAMA BOT LUH BANGSAT
+            + 'TEL;type=CELL;type=VOICE;waid=6281534162316:+62 881-3126-479n'' // GANTI NOMOR LU BEGONIAN
             + 'END:VCARD'
 // UDAH SEGITU KONTOLL KEBAWAH BIARIN AJA
 const ngonsol = JSON.parse(fs.readFileSync('./settings/Rem.json'))
@@ -903,10 +903,16 @@ me = baby.user
 uptime = process.uptime()
 buffer = await getBuffer(me.imgUrl)
 				    const uangku = checkATMuser(sender)
-shiz = `┏━━━━《 *${botName}*  シ︎ 》━━━━
-┃
+shiz = `┏━━━━《 *${ZHYYBOT}*  シ︎ 》━━━━
+┃ 
+┣ ❏ *OWNER INFO*
+┃ 
+┃ ❏ *NAMA : ZHYY
+┃ ❏ *CHAT : http://wa.me/628813126479
+┃ 
+┣ ❏ *USER INFO*
+┃ 
 ┃ ❏ *NAMA : ${pushname}*
-┃ ❏ *Prefix*: 「 ${prefix} 」
 ┃ ❏ *UANG : Rp:${uangku}*
 ┃ ❏ *Totar: ${mek.length}*
 ┃
@@ -1241,16 +1247,9 @@ shiz = `┏━━━━《 *${botName}*  シ︎ 》━━━━
 ┣ ❏ *${prefix}terpesona*
 ┣ ◪ *Thanks To*
 ┃
-┣ ❏ *Mr.108P*
-┣ ❏ *SofyanAmv*
-┣ ❏ *Ivan_maulana*
-┣ ❏ *Arashi~*
-┣ ❏ *Mr.A43G*
-┣ ❏ *ItsmeikyXSec404*
-┣ ❏ *Fadhill*
-┣ ❏ *Ramlan*
+┣ ❏ *WILDAN GANS*
 ┃
-┗━━━━《 Rem Bot -X シ︎ 》━━━━`
+┗━━━━《 ZHYYBOT -X シ︎ 》━━━━`
 baby.sendMessage(from, buffer, image, { quoted: mek, caption: shiz })
 const menu2 = fs.readFileSync('./assest/menu2.mp3');
 baby.sendMessage(from, menu2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
